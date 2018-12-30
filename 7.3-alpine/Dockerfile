@@ -7,8 +7,6 @@ ENV BUILD_DEPS \
     g++ \
     make
 
-RUN apk update
-
 RUN apk add --quiet --no-cache \
         freetype-dev \
         libjpeg-turbo-dev \
