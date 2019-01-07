@@ -22,8 +22,6 @@
 ```Dockerfile
 FROM php:7.3-cli-alpine
 
-RUN apk update
-
 COPY --from=gaiaz/php-extensions:7.3-alpine \
     /apcu.so \
     /gd.so \
@@ -57,7 +55,7 @@ RUN set -xe \
 
 RUN set -xe \
     && apk add --quiet --no-cache \
-        postgresql-client \
+        libpq \
     && docker-php-ext-enable \
         pdo_pgsql
 
