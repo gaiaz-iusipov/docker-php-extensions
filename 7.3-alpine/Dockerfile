@@ -1,7 +1,5 @@
 FROM php:7.3-cli-alpine as builder
 
-LABEL maintainer="g.iusipov@gmail.com"
-
 ENV BUILD_DEPS \
     autoconf \
     g++ \
