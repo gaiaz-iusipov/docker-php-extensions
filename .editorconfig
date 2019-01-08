@@ -9,3 +9,7 @@ trim_trailing_whitespace = true
 [Dockerfile]
 indent_style = space
 indent_size = 4
+
+[docker-compose.test.yml]
+indent_style = space
+indent_size = 2
