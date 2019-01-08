@@ -44,6 +44,8 @@ RUN apk add --quiet --no-cache --virtual .build-deps $BUILD_DEPS \
 
 FROM scratch
 
+LABEL maintainer="Gaiaz Iusipov <g.iusipov@gmail.com>"
+
 COPY --from=builder \
     /usr/local/lib/php/extensions/no-debug-non-zts-20170718/apcu.so \
     /usr/local/lib/php/extensions/no-debug-non-zts-20170718/gd.so \
