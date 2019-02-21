@@ -39,7 +39,7 @@ RUN apk add --quiet --no-cache --virtual .build-deps $BUILD_DEPS \
     && pecl -q install \
         apcu \
         redis \
-        xdebug-2.7.0beta1 \
+        xdebug-2.7.0RC2 \
     && apk del .build-deps
 
 FROM scratch
