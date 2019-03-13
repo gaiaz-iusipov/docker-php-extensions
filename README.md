@@ -1,6 +1,8 @@
 # docker-php-extensions
 
 [![GitHub](https://img.shields.io/github/license/gaiaz-iusipov/docker-php-extensions.svg)](https://github.com/gaiaz-iusipov/docker-php-extensions#license)
+[![Docker Automated build](https://img.shields.io/docker/cloud/automated/gaiaz/php-extensions.svg)](https://cloud.docker.com/repository/docker/gaiaz/php-extensions)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/gaiaz/php-extensions.svg)](https://cloud.docker.com/repository/docker/gaiaz/php-extensions)
 [![Docker Pulls](https://img.shields.io/docker/pulls/gaiaz/php-extensions.svg)](https://hub.docker.com/r/gaiaz/php-extensions/)
 
 :whale: A [Docker](https://www.docker.com/) image that contains prebuilt [PHP](https://hub.docker.com/_/php/) extensions.
