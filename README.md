@@ -22,9 +22,9 @@
 ## Usage
 
 ```Dockerfile
-FROM php:7.3-cli-alpine
+FROM php:7.4-cli-alpine
 
-COPY --from=gaiaz/php-extensions:7.3-alpine \
+COPY --from=gaiaz/php-extensions:7.4-alpine \
     /apcu.so \
     /gd.so \
     /intl.so \
@@ -34,7 +34,7 @@ COPY --from=gaiaz/php-extensions:7.3-alpine \
     /redis.so \
     /xdebug.so \
     /zip.so \
-    /usr/local/lib/php/extensions/no-debug-non-zts-20180731/
+    /usr/local/lib/php/extensions/no-debug-non-zts-20190902/
 
 RUN docker-php-ext-enable \
         apcu \
