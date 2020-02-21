@@ -9,6 +9,9 @@ RUN apk add --quiet --no-cache \
         freetype-dev \
         libjpeg-turbo-dev \
         libpng-dev \
+    && docker-php-ext-configure gd \
+        --with-jpeg=/usr/include/ \
+        --with-freetype=/usr/include/ \
     && docker-php-ext-install \
         gd > /dev/null
 
