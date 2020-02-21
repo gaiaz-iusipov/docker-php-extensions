@@ -46,6 +46,8 @@ RUN docker-php-ext-enable \
 RUN set -xe \
     && apk add --quiet --no-cache \
         libpng \
+        libjpeg \
+        freetype \
     && docker-php-ext-enable \
         gd
 
